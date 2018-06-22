@@ -1,0 +1,50 @@
+body {
+    background-color: chartreuse;
+}
+h1{
+    text-align: center;
+}
+#titulo{
+    background-color: blanchedalmond;
+}
+
+#verduras{
+    width: 500px;
+    height: auto;
+    background-color: darkgreen;
+    float: left;
+}
+#granos{
+    width: 500px;
+    background-color: goldenrod;
+    float: left;
+}
+#frutas{
+    width: 500px;
+    background-color: greenyellow;
+    float: left;
+}
+#abarrotes{
+    width: 500px;
+    background-color:blue;
+    float: left;
+}
+#aseo{
+    width: 500px;
+    background-color: brown;
+    float: left;
+}
+p {
+    color: white;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.listao {
+    font-style: italic;
+    color: cyan;
+}
+
+li[importante] {
+    text-decoration: underline red;
+}
