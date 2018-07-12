@@ -1,0 +1,482 @@
+/* Elementos principales de la página */
+
+* {box-sizing: border-box}
+
+.main_slide
+{
+    /* background: url('../images/blog_background.png'); */
+    background-color:#FFFFFF;
+    font-family: 'Indie Flower', cursive, sans-serif;
+    color: #1ce734;
+    margin:0;
+    height: 100%;
+}
+/* Slide */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    max-height: 600px;
+    border: 1px solid black;
+   position: relative;
+    margin: auto;
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+ /* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* tamaño de la imagen */
+/* tamaño de la imagen */
+.imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    width: 100%;
+    max-height: 300px;
+    background-size: contain;
+ }
+ .imagen-peq.first{
+    margin-left: 35px;
+ }
+.imagen-peq{
+/*    display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    height: 160px;
+    margin-top: 7%;
+/*    float: left;*/
+/*    width: 100%;*/
+/*    max-height: 400px;*/
+/*    background-size: contain;*/
+ }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+   color: black;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute; 
+   top: 0;
+ }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+   background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+}
+ /* On smaller screens, decrease text size*/
+@media only screen and (max-width: 300px) {
+   .prev, .next,.text {font-size: 11px}
+}
+
+/* -------- */
+#main_wrapper
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family:'Indie Flower', cursive;
+    color: #1ce734;
+    font-weight: normal;
+}
+
+/* Encabezado */
+
+header
+{
+    /* background: url('../images/line.png') repeat-x bottom; */
+    color: #1ce734;
+}
+
+#main_title
+{
+    display: inline-block;
+    font-family: 'Indie Flower', cursive, sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+header h1
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo{
+    vertical-align: middle;
+    height: 70px;
+    width: 70px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+#header h1
+{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+header h2
+{
+    font-family:'Indie Flower', cursive;
+    font-size: 2.0em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navegación */
+
+nav
+{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+
+}
+
+nav ul ol
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #1ce734;
+    border-bottom: 3px solid #1ce734;
+}
+
+/* Cuerpo */
+
+article, aside
+{
+    display: inline-block;
+    text-align: justify;
+}
+
+article
+{
+    position:absolute;
+    width: 625px;
+    margin: 10px 20px 30px;
+}
+
+.cat_icon
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 1.0em;
+}
+
+aside
+{
+    position: relative;
+    width: 235px;
+    height: 100%;
+    background-color:#FFFFFF;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color:#181818;
+    font-size: 0.9em;
+}
+
+aside ul {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.about_blog{
+    height: 50px;
+    width: 50px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+/*Cajas*/
+#boxes{
+    float:left;
+}
+#articles{
+    margin: 10px 20px 30px;
+}
+.content-box
+{
+margin: 0 0 25px;
+overflow: hidden;
+padding: 20px;
+background-color: #d8ecf7;
+border: 1px solid #afcde3;
+height: 100px;
+width: 200px;
+}
+
+#article-inf,td{
+border: 1px solid #000000;
+font-family: arial;
+font-size: 1.1em;
+padding: 5px 10px;
+color: #000000;
+height: 25px;
+width: 25%;
+}
+
+img.pequeña{
+    width: 50px;
+    height: 50px;
+  }
+/* Pie de página */
+
+footer
+{
+    margin-top: 10px;
+    height: 50%;
+    width: 100%;
+    background-color:#FFFFFF;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    /* color: #FFF; */
+    padding: 5px 0px;
+}
+
+footer h1
+{
+    font-size:1.0em;
+}
+
+#contac_blog, #colaborators, #sponsors 
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px 0px;
+}
+
+
+#contac_blog
+{
+    width: 30%;
+}
+
+#colaborators
+{
+    width: 30%;
+}
+
+#sponsors
+{
+    width: 20%;
+}
+
+#contac_blog p
+{
+    font-family:'Indie Flower', cursive;
+    font-size: 1.0em;
+    margin-top: 0px;
+    color: #181818;
+}
+
+#colaborators ul {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+#sponsors ul {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0px;
+}
+/* formulario contactenos */
+.container {
+    padding: 16px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: absolute;
+    z-index: 1; 
+    left: 50%;	
+    top: 50%;
+    width: 30%; 
+    height: 60%; 
+    overflow: auto; 
+	transform: translate(-50%,-50%);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 70%; 
+}
+
+/* Boton Cerrar */
+.close {    
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    /* border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+/* Boton cerrar */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Animacion al modal */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

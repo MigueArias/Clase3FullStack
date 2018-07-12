@@ -1,0 +1,41 @@
+<!doctype html>
+<header>
+    <meta charset="utf-8">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="style-form.css">
+</header>
+
+<body bgcolor="#bb9911";>
+ 
+<button onclick="document.getElementById('id01').style.display='block'">Contactenos</button>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+   class="close" title="Cerrar">&times;</span>
+
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="Contactenos.png" width="50%" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+	
+      <label for="nombre"><b>Nombre</b></label>
+      <input type="text" placeholder="Nombre" name="nombre" required>
+
+      <label for="celular"><b>Celular</b></label>
+      <input type="number" placeholder="Número celular" name="celular" required>
+
+      <label for="correo"><b>Correo electrónico</b></label>
+      <input type="email" placeholder="Correo electrónico" name="Correo" required>
+	  
+      <label for="mensaje"><b>Mensaje</b></label>
+      <input type="text" cols="20" rows="5"  placeholder="Mensaje" name="mensaje" required>
+	  
+      <button type="submit">Enviar</button>
+     
+    </div>
+  </form>
+</div>
+</body>
